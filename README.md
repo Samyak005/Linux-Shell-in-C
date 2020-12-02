@@ -31,7 +31,7 @@
 7.  `jobs`\
     Prints a list of all currently running jobs along with their pid in order of their creation
 
-8. `kjob <jobNumber> <signalNumber>`\ 
+8. `kjob <jobNumber> <signalNumber>`\
     Takes the job id of a running job and sends a signal value to that process
 
 9. `fg <jobNumber>`\
@@ -45,14 +45,15 @@
 
 
 ### Foreground and Background Processes
-    All other commands are treated as system commands like emacs, vim etc
-    To run a process in the background, follow the command with a '&' symbol. Eg. `emacs &`
+
+    All other commands are treated as system commands like emacs, vim etc\
+    To run a process in the background, follow the command with a '&' symbol. Eg. `emacs &`\
     Upon termination of a background process, the shell prints its PID
 
 ### Additional Commands
 
 1. `pinfo [PID]`\
-    Prints numerous details about the process such as its status, memory, and executable path
+    Prints numerous details about the process such as its status, memory, and executable path\
     Just `pinfo` with no arguments gives details of the shell
 
 ## Other Features
@@ -61,14 +62,14 @@
     Changes the status of currently running job to stop, and pushes it to the background
 
 2. `CTRL-C`\
-    Sends SIGINT signal to the current foreground job of the shell​
+    Sends SIGINT signal to the current foreground job of the shell​\
     If there is no foreground job, then the signal does not have any effect
 
 3. `CTRL-D`\
     quits shell
 
 4. Input-Output Redirection & Piping\
-    Handles `<`, `>`, `>>`, and `|` operators appropriately, wherever they are in the command
+    Handles `<`, `>`, `>>`, and `|` operators appropriately, wherever they are in the command\
     Throws error if syntax is incorrect
 
 ## Files:
@@ -92,6 +93,6 @@ quit.c - implements quit command\
 pipe.c - implements piping\
 kjob.c - implements kjob command\
 jobs.c - implements jobs command\
-io_redirection.c - implements io redirection\ 
+io_redirection.c - implements io redirection\
 fg.c - implements fg command\
 bg.c - implements bg command
