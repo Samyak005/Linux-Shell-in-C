@@ -75,7 +75,7 @@
 ## Files:
 
 Makefile - code to compile various files
-ls.c - implements ls
+ls.c - implements ls 
 pwd.c - implements pwd
 echo.c - implements echo
 cd.c - implements cd
